@@ -1,4 +1,6 @@
-class Study:  # pylint: disable=too-few-public-methods
+from Person import Person
+
+class Study(Person):  # pylint: disable=too-few-public-methods
     __slots__ = ('test','_score','__fullname')
     def __init__(self, firstname, lastname):
        self.__fullname = firstname + ':' + lastname
